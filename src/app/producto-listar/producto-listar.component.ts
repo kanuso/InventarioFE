@@ -5,11 +5,12 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { subscribe } from 'diagnostics_channel';
 import { CommonModule, NgForOf } from '@angular/common';
 import { Router, RouterOutlet } from '@angular/router';
+import { AgregarProductoComponent } from '../agregar-producto/agregar-producto.component';
 
 @Component({
   selector: 'app-producto-listar',
   standalone: true,
-  imports: [ NgForOf],
+  imports: [ NgForOf,AgregarProductoComponent],
   templateUrl: './producto-listar.component.html',
 })
 export class ProductoListarComponent {
@@ -44,5 +45,8 @@ export class ProductoListarComponent {
       );
       }
     
+      navegarAgregarProducto(){
+        this.enrutador.navigate(['agregar-producto'])
+      }
 
 }

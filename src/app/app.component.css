@@ -1,0 +1,14 @@
+.sidebar {
+    width: 250px; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background-color: blueviolet; 
+    padding-top: 20px; 
+}
+
+.content {
+    margin-left: 250px; 
+    padding: 20px; 
+}
